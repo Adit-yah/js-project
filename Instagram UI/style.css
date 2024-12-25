@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'helvetica now display';
+}
+
+.light{
+    height: 500px;
+    width: 300px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    color: black;
+    border: 3px solid black;
+}
+.dark{
+    height: 500px;
+    width: 300px;
+    background-color: black;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    border: 3px solid black;
+}
+/* <!--nav--> */
+.nav {
+    padding: 0px 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #777;
+}
+
+h1{
+    font-size:23px;
+}
+
+.nav .nr{
+    font-size:20px;
+    display: flex;
+    gap: 10px;    
+}
+
+/* <!--stories--> */
+
+ .stories {
+    width: 100%;
+    padding: 12.5px 10px;
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    border-bottom: 1px solid #777;
+
+}
+
+.stories::-webkit-scrollbar {
+    display: none;
+}
+
+.scontain {
+    text-align: center;
+    font-weight: 100;
+    position: relative;
+}
+
+.scontain h5{
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.stories .story {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    padding: 3px;
+    background: linear-gradient(to right bottom , yellow , orange , red , purple,blue);
+    overflow: hidden;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* add logo */
+.bl{
+    height: 22px;
+    width: 22px;
+    background-color: blue;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: 53px;
+    top: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* story_open */
+
+#stryopn{
+    width:100%;
+    height: 100%;
+    display: none;
+    background-image: url();
+    background-size: cover;
+    background-position: center;
+    padding: 10px 10px;
+    position: relative;
+}
+
+  #stryopn #Loading_format{
+    height: 3px;
+    width: 100%;
+    background-color: #e1dddd81;
+    border-radius: 10px;
+    border: none;
+
+}
+
+#lf{
+    height: 100%;
+    width: 0%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.721);
+    transition: all ease-in-out linear;
+
+}
+
+.strynav #story_h1{
+    margin-top: 10px;
+    color: #fff;
+     text-shadow: 0 0 3px  #000;
+}
+.strynav #h1stry{
+    color: #fff;
+     text-shadow: 0 0 3px  #000;
+}
+
+
+.strynav{
+    display: flex;
+     gap:   5px;
+     
+}
+
+.strynav .story {
+    margin-top: 5px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: 1px solid #010101;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.strynav img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.scroll_container{
+     height:420px ;
+     width: 100%;
+     overflow-y: scroll;
+}
+
+.scroll_container::-webkit-scrollbar{
+    display: none;
+}
+
+ /* scroll container middle post part */
+.post{
+    padding: 5px 0px;
+    height: 303px;
+}
+
+.post .post_upper_part{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 4px;
+    margin-top: 2px;
+}
+
+.pup{
+    display: flex;
+    gap: 5px;
+}
+.pup img{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.pup h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.pup h6{
+    font-size: 12px;
+    line-height: 10px;
+    color: #777;
+    font-weight: 400;
+}
+
+ .post_upper_part i{
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.post .post_post{
+    height: 263px;
+    background-size: cover;
+    background-position: center;
+}
+
+.post .post_btm{
+    height: 40px;
+    border-bottom: 1px solid #777;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 25px;
+    padding: 0 4px;
+}
+
+/* bottom */
+.btm{ 
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 10px;
+    font-size: 25px;
+    align-items: center; 
+}
+
+.acc{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.acc_img{
+    height: 100%;
+    width: 100%;
+}

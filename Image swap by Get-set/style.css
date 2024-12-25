@@ -1,0 +1,44 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing : border-box;
+}
+html,body{
+    width:100%;
+    height:100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-family: gilroy;
+}
+
+.photu1{
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.photu2{
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+button:active{
+    scale:0.95;
+}
+
